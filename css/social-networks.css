@@ -156,6 +156,7 @@
     position: fixed;
     left: 50%;
     padding-top: 83px;
+    margin-left: -20px;
 }
 
 #socialContactsModal .modal-content {
