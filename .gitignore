@@ -81,7 +81,7 @@ _TeamCity*
 # Installshield output folder
 [Ee]xpress/
 
-bower_components/
+#bower_components/
 
 # DocProject is a documentation generator add-in
 DocProject/buildhelp/
