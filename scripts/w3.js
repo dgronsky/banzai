@@ -237,9 +237,11 @@ w3.includeHTML = function (cb) {
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    elmnt.innerHTML = this.responseText;
-                    elmnt.removeAttribute("w3-include-html");
-                    w3.includeHTML(cb);
+                    var partialElem = document.createElement('div');
+                    partialElem.innerHTML = this.responseText;
+                    elmnt.insertAdjacentHTML('afterend', partialElem.innerHTML);
+                    elmnt.remove()
+                    w3.includeHTML(partialElem);
                 }
             }
             xhttp.open("GET", file, true);
@@ -247,7 +249,7 @@ w3.includeHTML = function (cb) {
             return;
         }
     }
-    if (cb) cb();
+    //if (cb) cb();
 };
 w3.getHttpData = function (file, func) {
     w3.http(file, function () {
