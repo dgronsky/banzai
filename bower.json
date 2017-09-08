@@ -7,6 +7,10 @@
   "dependencies": {
     "popper.js": "^1.11.0",
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jcapslide-bower": "*",
+    "angular": "angularjs#^1.6.6",
+    "angular-route": "^1.6.6",
+    "ui.bootstrap": "^2.5.0"
   }
 }
