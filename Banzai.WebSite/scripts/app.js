@@ -2,7 +2,7 @@
 
 // create the module and name it app
 // also include ngRoute for all our routing needs
-var app = angular.module('banzaiApp', ['ngRoute']);
+var app = angular.module('banzaiApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ngTouch']);
 
 //configure our routes
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -11,7 +11,7 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
     $routeProvider
         .when('/', {
             templateUrl: 'views/home.html',
-            controller: 'mainController'
+            controller: 'homeController'
         })
 
         .when('/info', {
@@ -34,30 +34,6 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
         });
 
 }]);
-
-
-
-// create the controller and inject Angular's $scope
-app.controller('mainController', function ($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look! home page';
-});
-
-app.controller('infoController', function ($scope) {
-    $scope.message = 'Look! I am an info page.';
-});
-
-app.controller('teamController', function ($scope) {
-    $scope.message = 'Look! I am an team page.';
-});
-
-app.controller('trainersController', function ($scope) {
-    $scope.message = 'Look! I am an trainers page.';
-});
-
-app.controller('shopController', function ($scope) {
-    $scope.message = 'Look! I am an shop page.';
-});
 
 $(document).on('click', function (event) {
     var $clickedOn = $(event.target),

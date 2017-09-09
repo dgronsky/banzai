@@ -13,7 +13,20 @@
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bower_components/angular/angular.min.js"></script>
     <script src="./bower_components/angular-route/angular-route.min.js"></script>
-    <script src="./scripts/app.js" type="text/javascript"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="./bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+   <script src="./bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="./scripts/app.js" type="text/javascript"></script>
+
+    
+    <script src="./scripts/controllers/maincontroller.js" type="text/javascript"></script>
+    <script src="./scripts/controllers/homecontroller.js" type="text/javascript"></script>
+    <script src="./scripts/controllers/infocontroller.js" type="text/javascript"></script>
+    <script src="./scripts/controllers/shopcontroller.js" type="text/javascript"></script>
+    <script src="./scripts/controllers/teamcontroller.js" type="text/javascript"></script>
+    <script src="./scripts/controllers/trainerscontroller.js" type="text/javascript"></script>
+
 </head>
 
 <!-- define angular controller -->
@@ -26,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#/">BANZAI - Спортивный клуб боевых искусств</a>
+                <a class="navbar-brand" href="#/">{{BrandTitle}}</a>
             </div>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav">
