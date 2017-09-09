@@ -1,0 +1,15 @@
+{
+  "name": "Banzai",
+  "homepage": "https://github.com/dgronsky/banzai",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "popper.js": "^1.11.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular": "angularjs#^1.6.6",
+    "angular-route": "^1.6.6",
+    "angular-ui": "^0.4.0"
+  }
+}
