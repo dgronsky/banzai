@@ -1,2 +1,0 @@
-﻿debugger;
-var menu = "home";
