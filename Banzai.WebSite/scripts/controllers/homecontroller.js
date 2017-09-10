@@ -8,7 +8,7 @@ var app = angular.module('banzaiApp');
 // create the controller and inject Angular's $scope
 app.controller('homeController', function ($scope) {
     $scope.$parent.page = "home";
-    $scope.myInterval = 1000;
+    $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var currIndex = 0;

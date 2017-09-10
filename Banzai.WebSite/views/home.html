@@ -2,12 +2,15 @@
     <div class="row content home">
 
         <div class="col-lg-12 col-md-12 col-sm-12 padding-zero">
-            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-pause="true">
                 <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                    <img height="900px" ng-src="{{slide.image}}" style="margin:auto;">
-                    <div class="carousel-caption">
+                    <img height="850px" ng-src="{{slide.image}}" style="margin:auto;">
+                    <!--<div class="carousel-caption">
                         <h4>Slide {{slide.id}}</h4>
                         <p>{{slide.text}}</p>
+                    </div>-->
+                    <div class="carousel carousel-no-controls">
+                        <div class="carousel-inner" ng-transclude></div>
                     </div>
                 </div>
             </div>
