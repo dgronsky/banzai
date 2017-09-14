@@ -4,5 +4,62 @@
 app.controller('trainersController', function ($scope) {
     // create a message to display in our view
     $scope.$parent.page = "trainers";
-    $scope.message = 'Look! I am an trainers page.';
+    $scope.trainers = [
+        new trainer("makaronak.jpg",
+            "Макаронак",
+            "Андрей",
+            "Николаевич",
+            ["чемпион РБ, мастер спорта,",
+             "член нач. сборной команды,",
+             "2е место на Чемпионате мира,",
+             "кадеты, г.Москва(Россия)"
+            ]),
+        new trainer(
+            "rakhansky.jpg",
+            "Раханский",
+            "Кирил",
+            "Степанович",
+            ["тренер Макаронка Андрея Николаевич :)",
+             "добавить описание"
+            ]),
+    ];
+
+    if ($scope.trainers.length <= 3)
+    {
+        $scope.totalImageColumns = $scope.trainers.length;
+    } else
+    {
+        $scope.totalImageColumns = 3;
+    }
+    $scope.IsFirstImage = function ($index)
+    {
+        return $index % 3 == 1; 
+    }
+
+    $scope.IsLastImage = function ($index) {
+        debugger;
+        return $index % 3 == 0;
+    }
+
+    $scope.IsMiddleImage = function ($index)
+    {
+        return !$scope.IsFirstImage($index) && !$scope.IsLastImage;
+    }
+     
+    angular.element(document).ready(function () {
+        window.setTimeout(function () { 
+            $('div[id^="trainer_"]').each(function (index) {
+                $(this).capslide({
+                    caption_color: 'black',
+                    caption_bgcolor: '#E6E79C',
+                    overlay_bgcolor: '#E6E79C',
+                    border: '',
+                    showcaption: false
+                });
+
+            });
+        }, 0);
+
+    });
+
 });

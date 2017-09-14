@@ -1,0 +1,27 @@
+{
+  "name": "jcapslide-bower",
+  "description": "Bower distribution of jCapSlide",
+  "main": [
+    "dist/js/jquery.capSlide.js",
+    "dist/css/style.css"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "jcapslide"
+  ],
+  "authors": [
+    "https://github.com/codrops"
+  ],
+  "license": "MIT",
+  "homepage": "http://tympanus.net/codrops/2009/11/23/jcapslide-a-jquery-image-caption-plugin/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

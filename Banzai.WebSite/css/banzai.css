@@ -5,7 +5,6 @@ body {
 }
 
 body {
-    background-image: url("../content/images/bamboo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 900px;
@@ -156,4 +155,26 @@ footer {
 
 .carousel-no-controls {
     cursor: default;
+}
+.trainer-block
+{
+    /*margin: 0 auto !important;*/
+}
+
+.trainer-img .img-responsive {
+    margin: 0 auto;
+}
+
+
+
+.trainer-description-line
+{
+    padding-left: 10px;
+}
+.trainer-first-column-image {
+    float: right;
+}
+
+.trainer-last-column-image{
+    float:left;
 }
