@@ -1,11 +1,11 @@
-﻿<div class="container-fluid text-center">
+﻿<div class="container-fluid">
     <div class="row content home">
 
-        <div class="col-lg-12 col-md-12 col-sm-12 padding-zero">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-pause="true">
                 <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                    <img ng-src="{{slide.image}}"  class="img-responsive"> <!--style="margin:auto;"--> 
-                    <div class="carousel carousel-no-controls">
+                    <img ng-src="{{slide.image}}" class="img-responsive center-block image-block"/>
+                    <div class="carousel">
                         <div class="carousel-inner"></div>
                     </div>
                 </div>

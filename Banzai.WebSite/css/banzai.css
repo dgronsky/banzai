@@ -141,23 +141,97 @@ footer {
 .navbar-brand {
     padding-left: 82px;
     line-height: 16px;
+    padding-top: 14px;
 }
 
-@media (min-width: 768px) {
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
-    .navbar-nav > li > a {
-        padding-top: 0px;
-        padding-bottom: 0px;
+/*iPhone 5 & 5S in landscape*/ 
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+
+    .image-block {
+        max-height: 400px !important;
     }
-    /* padding-top: 15px; */
-    /* padding-bottom: 15px; */
+}
+
+/*iPhone 5 & 5S in portrait*/ 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+ 
+}
+
+@media only screen and (max-width: 576px) and (orientation:portrait) {
+    /* xs */
+   
+}
+
+/*iPhone 6 in landscape*/ 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+    .image-block {
+        max-height: 400px !important;
+    }
+}
+
+/*iPhone 6 in portrait*/ 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    /* STYLES GO HERE */
+}
+
+/*iPhone 6 Plus in landscape*/ 
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+    .image-block {
+        max-height: 400px !important;
+    }
+}
+
+/*iPhone 6 Plus in portrait*/ 
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+    /* STYLES GO HERE */
+}
+
+
+@media only screen 
+and (max-width: 767px) 
+and (orientation:landscape) {
+    
+   
+    /* sm */
+}
+
+@media (max-width: 992px) {
+}
+
+.image-block 
+{
+    padding-top: 10px;
 }
 
 .carousel-no-controls {
     cursor: default;
 }
-.trainer-block
-{
+
+.trainer-block {
     /*margin: 0 auto !important;*/
 }
 
@@ -167,14 +241,14 @@ footer {
 
 
 
-.trainer-description-line
-{
+.trainer-description-line {
     padding-left: 10px;
 }
+
 .trainer-first-column-image {
     float: right;
 }
 
-.trainer-last-column-image{
-    float:left;
+.trainer-last-column-image {
+    float: left;
 }
