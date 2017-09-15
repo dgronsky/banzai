@@ -127,7 +127,25 @@
 #socialContactsModal {
     position: absolute;
     top: 0px;
-    padding-top: 182px !important;
+    padding-top: 182px;
+}
+#socialContactsModal {
+    position: absolute;
+    top: 0px;
+}
+
+@media only screen and (orientation : landscape) 
+{
+    #socialContactsModal {
+        padding-top: 80px !important;
+    }
+    
+}
+
+@media only screen and (orientation : portrait) {
+    #socialContactsModal {
+        padding-top: 182px !important;
+    }
 }
 
     #socialContactsModal .modal-content {
@@ -145,29 +163,29 @@
         color: white;
     }
 
-#modalAboutUsLabel {
-    color: black;
-    font-size: 500;
-}
+    #modalAboutUsLabel {
+        color: black;
+        font-size: 500;
+    }
 
-#socialContactsModal .social-button-list {
-    position: fixed;
-    left: 50%;
-    padding-top: 83px;
-    margin-left: -20px;
-}
+    #socialContactsModal .social-button-list {
+        position: fixed;
+        left: 50%;
+        padding-top: 83px;
+        margin-left: -20px;
+    }
 
-#socialContactsModal .modal-content {
-    border: 1px solid #999 !important;
-}
+    #socialContactsModal .modal-content {
+        border: 1px solid #999 !important;
+    }
 
-#socialContactsModal .modal-body {
-    background-image: url("../content/images/about-us.png") !important;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 293px;
-}
+    #socialContactsModal .modal-body {
+        background-image: url("../content/images/about-us.png") !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 293px;
+    }
 
-#socialContactsModal .modal-header {
-    background-color: white;
-}
+    #socialContactsModal .modal-header {
+        background-color: white;
+    }

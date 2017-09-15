@@ -48,17 +48,8 @@ app.controller('trainersController', function ($scope) {
      
     angular.element(document).ready(function () {
         window.setTimeout(function () { 
-            $('div[id^="trainer_"]').each(function (index) {
-                $(this).capslide({
-                    caption_color: 'black',
-                    caption_bgcolor: '#E6E79C',
-                    overlay_bgcolor: '#E6E79C',
-                    border: '',
-                    showcaption: false
-                });
-
-            });
-        }, 0);
+            InitializeJsControls();
+        }, 100);
 
     });
 

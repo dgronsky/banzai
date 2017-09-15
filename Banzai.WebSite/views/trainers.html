@@ -1,9 +1,25 @@
-﻿<div class="container-fluid">
+﻿<script type="text/javascript">
+    
+    function InitializeJsControls() {
+
+        $('div[id^="capslide_"]').each(function (index) {
+            $(this).capslide({
+                caption_color: 'black',
+                caption_bgcolor: '#E6E79C',
+                overlay_bgcolor: '#E6E79C',
+                border: '',
+                showcaption: true
+            });
+
+        })
+    };
+</script>
+<div class="container-fluid">
     <div class="row content trainers">
         <div class="row">
             <div ng-repeat="trainer in trainers" class="col-lg-{{12/totalImageColumns}} col-md-{{12/totalImageColumns}} col-sm-12 col-xs-12 ">
 
-                <div id="trainer_{{$index}}" class="ic_container trainer-block" style="margin: 0 auto;" >
+                <div id="capslide_trainer_{{$index}}" class="ic_container trainer-block" style="margin: 0 auto;" >
                     <img src="../content/images/trainers/{{trainer.image}}" class="trainer-img img-responsive" />
                     <div class="overlay" style="display:none;"></div>
                     <div class="ic_caption">

@@ -68,6 +68,10 @@ footer {
 }
 
 @media(max-width:767px) {
+    .trainer-img {
+        width: 400px;
+        height: 500px;
+    }
     .iframe {
         height: 328px;
     }
@@ -83,6 +87,10 @@ footer {
 }
 
 @media(min-width:768px) {
+    .trainer-img {
+        width: 400px;
+        height: 500px;
+    }
     .iframe {
         height: 328px;
     }
@@ -214,8 +222,7 @@ and (orientation : portrait) {
 @media only screen 
 and (max-width: 767px) 
 and (orientation:landscape) {
-    
-   
+
     /* sm */
 }
 
@@ -236,6 +243,7 @@ and (orientation:landscape) {
 }
 
 .trainer-img .img-responsive {
+    padding-top: 10px;
     margin: 0 auto;
 }
 
