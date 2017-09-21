@@ -15,28 +15,30 @@ app.controller('homeController', function ($scope) {
     //        id: currIndex++
     //    }
     //];
-    var images = [
-    'dsc_0206.jpg',
-    'dsc_0298.jpg',
-    'dsc_0466.jpg',
-    'dsc_0515.jpg',
-    'dsc_0612.jpg',
-    'dsc_0626.jpg',
-    'dsc_0678.jpg',
-    'dsc_0699.jpg',
-    'dsc_8867.jpg',
-    'dsc_9042.jpg',
-    'dsc_9156.jpg',
-    'dsc_9193.jpg',
-    'dsc_9466.jpg',
-    'dsc_9530.jpg',
-    'dsc_9656.jpg',
-    'dsc_9706.jpg',
-    'dsc_9744.jpg',
-    'dsc_9785.jpg',
-    'dsc_9843.jpg',
-    'dsc_9982.jpg',
-    ];
+    var images = [];
+    //var images = [
+    //'dsc_0206.jpg',
+    //'dsc_0298.jpg',
+    //'dsc_0466.jpg',
+    //'dsc_0515.jpg',
+    //'dsc_0612.jpg',
+    //'dsc_0626.jpg',
+    //'dsc_0678.jpg',
+    //'dsc_0699.jpg',
+    //'dsc_8867.jpg',
+    //'dsc_9042.jpg',
+    //'dsc_9156.jpg',
+    //'dsc_9193.jpg',
+    //'dsc_9466.jpg',
+    //'dsc_9530.jpg',
+    //'dsc_9656.jpg',
+    //'dsc_9706.jpg',
+    //'dsc_9744.jpg',
+    //'dsc_9785.jpg',
+    //'dsc_9843.jpg',
+    //'dsc_9982.jpg',
+    //];
+
     //$scope.addSlide = function () {
     //    var newWidth = 600 + slides.length + 1;
     //    slides.push({

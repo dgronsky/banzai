@@ -46,11 +46,11 @@ app.controller('trainersController', function ($scope) {
         return !$scope.IsFirstImage($index) && !$scope.IsLastImage;
     }
      
-    angular.element(document).ready(function () {
-        window.setTimeout(function () { 
-            InitializeJsControls();
-        }, 100);
+    //angular.element(document).ready(function () {
+    //    window.setTimeout(function () { 
+    //        InitializeJsControls();
+    //    }, 100);
 
-    });
+    //});
 
 });

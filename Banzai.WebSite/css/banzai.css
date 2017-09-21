@@ -1,6 +1,13 @@
-body {
+/*body {
     padding-top: 0px;
     background-color: black;
+    color: white;
+}*/
+
+/*fake*/
+body {
+    padding-top: 0px;
+    background-color: cornflowerblue;
     color: white;
 }
 
@@ -11,23 +18,23 @@ body {
 }
 
     body.home {
-        background-image: url("../content/images/background/home.png") !important;
+        background-image: url("../content/images/background/home1.png") !important;
     }
 
     body.info {
-        background-image: url("../content/images/background/home.png") !important;
+        background-image: url("../content/images/background/home1.png") !important;
     }
 
     body.team {
-        background-image: url("../content/images/background/team.jpg") !important;
+        background-image: url("../content/images/background/team1.jpg") !important;
     }
 
     body.trainers {
-        background-image: url("../content/images/background/trainers.png") !important;
+        background-image: url("../content/images/background/trainers1.png") !important;
     }
 
     body.shop {
-        background-image: url("../content/images/background/shop.jpg") !important;
+        background-image: url("../content/images/background/shop1.jpg") !important;
     }
 
 .starter-template {
@@ -133,7 +140,7 @@ footer {
 }
 
 .navbar-header {
-    background-image: url("../content/images/favicon/android-icon-48x48.png");
+    /*background-image: url("../content/images/favicon/android-icon-48x48.png");*/
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: center;
