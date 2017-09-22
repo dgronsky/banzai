@@ -4,12 +4,17 @@
     color: white;
 }*/
 
-/*fake*/
+/* fake */
 body {
     padding-top: 0px;
-    background-color: cornflowerblue;
+    background-color: #39C2D7;
     color: white;
 }
+.navbar {
+    background-color: #A3C644;
+    border-color: #A3C644;
+}
+/* fake */
 
 body {
     background-repeat: no-repeat;
