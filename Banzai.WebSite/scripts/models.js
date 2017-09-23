@@ -6,7 +6,7 @@
     this.image = image;
     this.moreimages = moreimages;
 
-    this.fullname = function () {
+    this.getFullname = function () {
         return this.surname  + ' ' + this.name + ' ' + this.middle;
     };
 

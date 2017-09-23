@@ -1,17 +1,19 @@
 ﻿<div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-pause="true">
-            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                <img ng-src="{{slide.image}}" class="img-responsive center-block image-block" />
-                <div class="carousel">
-                    <div class="carousel-inner"></div>
+        <div class="row">
+            <div class="thumbnail-detail-carousel" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-pause="true">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="{{slide.image}}" class="img-responsive center-block image-block" />
+                    <div class="carousel">
+                        <div class="carousel-inner"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h4>{{description}}</h4>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumbnail-detail-description-block">
+        <span class="thumbnail-detail-description-text">{{description}}</span>
     </div>
 </div>

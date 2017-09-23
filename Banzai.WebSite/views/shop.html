@@ -1,12 +1,6 @@
-﻿<div class="container-fluid text-center">
+﻿<div class="container text-center info">
     <div class="row content shop">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="info-item-container shop">
-                    shop
-                    {{message}}
-                </div>
-            </div>
+        <div thumbnail="" ng-repeat="slide in shopItems track by slide.id" data-slides="slide" url="{{$parent.page}}" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         </div>
     </div>
 </div>

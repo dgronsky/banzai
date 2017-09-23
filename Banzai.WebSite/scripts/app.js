@@ -28,6 +28,12 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
            templateUrl: 'views/team.html',
             controller: 'teamController'    
         })
+
+        .when('/team/:id', {
+            templateUrl: 'views/teamdetails.html',
+            controller: 'teamController'
+        })
+
         .when('/trainers', {
             templateUrl: 'views/trainers.html',
             controller: 'trainersController'
@@ -41,7 +47,12 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
         .when('/shop', {
             templateUrl: 'views/shop.html',
             controller: 'shopController'
+        })
+        .when('/shop/:id', {
+            templateUrl: 'views/shopdetails.html',
+            controller: 'shopController'
         });
+  
 
 }]);
 

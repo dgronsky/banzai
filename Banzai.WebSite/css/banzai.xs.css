@@ -1,0 +1,32 @@
+/*xs*/
+@media(max-width:767px) {
+    /*xs*/
+    .trainer-img {
+        width: 400px;
+        height: 500px;
+    }
+
+    .iframe {
+        height: 328px;
+    }
+
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+
+    .view-container {
+        height: auto !important;
+        min-height: initial !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+
+    /* xs */
+}
+
