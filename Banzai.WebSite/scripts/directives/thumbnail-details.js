@@ -2,7 +2,7 @@
 app.directive('thumbnailDetails', function () {
     return {
         scope: {
-            data: '=data',
+            slides: '=slides',
             description: '@description'
         },
         templateUrl: './views/templates/thumbnail-details.html' 
