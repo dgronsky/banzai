@@ -21,9 +21,4 @@ app.controller('infoDetailsController', function ($scope, $routeParams) {
     $scope.slides = slides;
 });
 
-app.directive('infoItem', function () {
-    return {
-        templateUrl: './views/templates/infoitem.html' 
-    };
-});
 

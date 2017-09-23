@@ -21,7 +21,7 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
 
         .when('/info/:id', {
             templateUrl: 'views/infodetails.html',
-            controller: 'infoDetailsController'
+            controller: 'infoController'
         })
 
        .when('/team', {
