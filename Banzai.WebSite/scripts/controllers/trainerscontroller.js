@@ -1,11 +1,13 @@
 ﻿var app = angular.module('banzaiApp');
 
 // create the controller and inject Angular's $scope
-app.controller('trainersController', function ($scope) {
+app.controller('trainersController', function ($scope, $routeParams) {
+    debugger;
     // create a message to display in our view
     $scope.$parent.page = "trainers";
     $scope.trainers = [
         new trainer("makaronak.jpg",
+            ["makaronak.jpg", "makaronak.jpg", "makaronak.jpg", "makaronak.jpg"],
             "Макаронак",
             "Андрей",
             "Николаевич",
@@ -16,6 +18,7 @@ app.controller('trainersController', function ($scope) {
             ]),
         new trainer(
             "rakhansky.jpg",
+            ["rakhansky.jpg", "rakhansky.jpg", "rakhansky.jpg", "rakhansky.jpg"],
             "Раханский",
             "Кирил",
             "Степанович",
@@ -23,34 +26,35 @@ app.controller('trainersController', function ($scope) {
              "добавить описание"
             ]),
     ];
-
-    if ($scope.trainers.length <= 3)
+    var currIndex = 0;
+    var trainerSlides = [];
+    for (index = 0; index < $scope.trainers.length; index++)
     {
-        $scope.totalImageColumns = $scope.trainers.length;
-    } else
-    {
-        $scope.totalImageColumns = 3;
-    }
-    $scope.IsFirstImage = function ($index)
-    {
-        return $index % 3 == 1; 
-    }
+        var selectedTrainer = $scope.trainers[index];
+        trainerSlides.push({
+            image: "../content/images/trainers/" + selectedTrainer.image,
+            text: selectedTrainer.fullname(),
+            id: currIndex++
+        });
 
-    $scope.IsLastImage = function ($index) {
-        debugger;
-        return $index % 3 == 0;
     }
+    $scope.trainerSlides = trainerSlides;
+    debugger;
+    if ($routeParams.id !== undefined) {
+        $scope.id = $routeParams.id;
 
-    $scope.IsMiddleImage = function ($index)
-    {
-        return !$scope.IsFirstImage($index) && !$scope.IsLastImage;
+        $scope.text = $scope.trainers[$scope.id].getDescription();
+        var moreimages = $scope.trainers[$scope.id].moreimages;
+
+        var details = [];
+        var currIndex = 0;
+
+        for (var index = 0; index < moreimages.length; index++) {
+            details.push({
+                image: "../content/images/trainers/" + moreimages[index],
+                id: currIndex++
+            });
+        }
+        $scope.details = details;
     }
-     
-    //angular.element(document).ready(function () {
-    //    window.setTimeout(function () { 
-    //        InitializeJsControls();
-    //    }, 100);
-
-    //});
-
 });

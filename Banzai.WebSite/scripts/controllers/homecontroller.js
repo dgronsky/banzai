@@ -47,7 +47,6 @@ app.controller('homeController', function ($scope) {
     //        id: currIndex++
     //    });
     //};
-    debugger;
     for (var index = 0; index < images.length; index++)
     {
         slides.push({

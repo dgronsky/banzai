@@ -33,6 +33,11 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
             controller: 'trainersController'
         })
 
+        .when('/trainers/:id', {
+            templateUrl: 'views/trainerdetails.html',
+            controller: 'trainersController'
+        })
+
         .when('/shop', {
             templateUrl: 'views/shop.html',
             controller: 'shopController'
