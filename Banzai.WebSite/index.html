@@ -83,26 +83,28 @@
         </header>
 
 
+        <div class="page-content-wrapper">
+            <div class="row content info text-center title-page-container title-{{page}}-container">
+                <span class="title-page-text title-{{page}}-text">
+                    {{pageHeader}}
+                </span>
+            </div>
 
-        <div class="row content info text-center title-page-container title-{{page}}-container">
-            <span class="title-page-text title-{{page}}-text">
-                {{pageHeader}}
-            </span>
+            <div class="container" ng-view></div>
         </div>
-
-        <div class="container" ng-view></div>
-
-        <footer class="container">
+        
+    </div>
+    <footer class="container">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs sitemap">
+                    <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs sitemap">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6" >
                                 <a href="#/">В начало</a>
                                 <a href="#info">Иформация</a>
                                 <a href="#team">Команда</a>
                             </div>
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <a href="#trainers">Тренера</a>
                                 <a href="#shop">Магазин</a>
                                 <a href="blank:about" data-toggle="modal" data-target="#socialContactsModal">О нас</a>
@@ -110,12 +112,12 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-7 hidden-xs footer-logo">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 footer-logo">
 
                         <img src="./content/images/favicon/android-icon-48x48.png" />
 
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 social">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 social">
                         <a href="https://vk.com/banzai_team" class="fa fa-vk" target="_blank"></a>
                         <a href="https://www.facebook.com/banzaikarateteam" class="fa fa-facebook" target="_blank"></a>
                         <a href="https://www.youtube.com/channel/UC1IFLnA3X21JLUPxTrKEWRA/featured" class="fa fa-youtube" target="_blank"></a>
@@ -125,7 +127,6 @@
                 </div>
             </div>
         </footer>
-    </div>
 
     
 

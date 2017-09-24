@@ -231,7 +231,16 @@ footer .social {
 html{
     height: 100%;
 }
-
+body {
+    height: 100%;
+}
 footer {
     background-color: initial;
+    margin-top: -86px;
+
+}
+
+.page-content-wrapper {
+    padding-top: 20px;
+    padding-bottom: 86px;
 }
