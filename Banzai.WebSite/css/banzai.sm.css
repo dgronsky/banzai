@@ -19,8 +19,8 @@
         height: auto;
     }
 
-    .view-container {
+    /*.view-container {
         height: auto !important;
         min-height: initial !important;
-    }
+    }*/
 }

@@ -3,7 +3,7 @@
 // create the controller and inject Angular's $scope
 app.controller('homeController', function ($scope) {
     $scope.$parent.page = "home";
-    $scope.$parent.pageHeader = "БАНЗАЙ - Клуб единоборств";
+    $scope.$parent.pageHeader = "Есть правила, но нет компромиссов ©";
     $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
@@ -11,6 +11,7 @@ app.controller('homeController', function ($scope) {
     var slides = [];
 
     var images = [
+    'dsc_mich.jpg',
     'dsc_0206.jpg',
     'dsc_0298.jpg',
     'dsc_0466.jpg',

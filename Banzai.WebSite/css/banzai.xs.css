@@ -23,10 +23,14 @@
         height: auto !important;
         min-height: initial !important;
     }
+
+    .title-page-text
+    {
+        font-size: 19px;
+    }
 }
 
 @media only screen and (max-width: 767px) and (orientation:landscape) {
 
     /* xs */
 }
-

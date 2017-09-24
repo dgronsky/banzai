@@ -4,20 +4,17 @@ body {
     color: white;
 }
 
-.navbar {
+/*.navbar {
     background-color: black;
     border-color: black;
-}
+}*/
 
 
 body {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    /*min-height: 900px;*/
-}
+   }
 
 #main {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100% 100%;
 }
 
@@ -41,19 +38,15 @@ body {
         background-image: url("../content/images/background/shop.jpg") !important;
     }
 
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
-}
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     margin-bottom: 0px;
 }
 
-.padding-zero {
+/*.padding-zero {
     padding-left: 0px;
     padding-right: 0px;
-}
+}*/
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 /*.row.content {
     height: 810px
@@ -70,7 +63,6 @@ body {
 footer {
     background-color: black;
     color: white;
-    padding: 15px;
 }
 
 .iframe {
@@ -120,9 +112,6 @@ footer {
     padding-right: 0px;
 }
 
-.image-block {
-    padding-top: 10px;
-}
 
 .carousel-no-controls {
     cursor: default;
@@ -132,10 +121,10 @@ footer {
     /*margin: 0 auto !important;*/
 }
 
-.trainer-img .img-responsive {
+/*.trainer-img .img-responsive {
     padding-top: 10px;
     margin: 0 auto;
-}
+}*/
 
 
 
@@ -183,10 +172,6 @@ footer {
 .thumbnail-detail-description-text {
 }
 
-.title-page-container {
-    margin-top: 20px;
-}
-
 .title-page-text {
     font-size: 23pt;
     font-weight: 600;
@@ -199,12 +184,54 @@ footer {
     background-color: black;
 }
 
-.view-container {
-    
+/*.view-container {
     min-height: 725px;
-}
+}*/
 
-.footer-block {
+/*.footer-block {
     padding-right: 0px !important;
     padding-left: 0px !important;
+}*/
+
+.footer-logo {
+    float: left;
+}
+
+
+
+
+footer .container .row {
+    text-align: center;
+}
+
+footer .container {
+    padding-top: 10px;
+}
+
+footer .container .sitemap a {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: #9d9d9d;
+        font-family: inherit;
+    }
+
+footer .social {
+    padding: 10px 0 10px 0;
+}
+.title-home-text{
+    /*color: #78352E;*/
+ 
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+footer {
+    background-color: initial;
 }
