@@ -18,4 +18,16 @@
     .row.content {
         height: auto;
     }
+
+    .container {
+        width: initial !important;
+    }
+
+    header .navbar {
+   
+    }
+
+    footer .container .sitemap a {
+        font-size: 14px;
+    }
 }
