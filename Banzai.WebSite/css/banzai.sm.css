@@ -30,4 +30,9 @@
     footer .container .sitemap a {
         font-size: 14px;
     }
+
+    .home .carousel-indicators
+    {
+        display:none !important;
+    }
 }
