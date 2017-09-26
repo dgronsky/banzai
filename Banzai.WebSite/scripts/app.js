@@ -8,6 +8,7 @@ var app = angular.module('banzaiApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     //debugger;
     $locationProvider.hashPrefix('');
+    $locationProvider.html5Mode(true);
     $routeProvider
         .when('/', {
             templateUrl: 'views/home.html',
